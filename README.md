@@ -2,7 +2,7 @@
  A web app that predicts starting bid of a player based on its records in real time using machine learning
 <ul>
 <li>
-  Web App created using Django in Fifa19_Projects Folder
+  Web App created using Django in Projects Folder
 </li>
 <li>
   Machine Learning Using TensorFlow
