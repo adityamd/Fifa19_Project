@@ -15,7 +15,7 @@
   <strong><em>Fifa19.ipynb</em></strong> ==> Jupter Notebook
  </li>
  <li>
-  <strong><em>Fifa19_Model</em></strong> ==> Saved trained mpdel to use for real time predictions
+  <strong><em>Fifa19_Model</em></strong> ==> Saved trained model that will be used for real time predictions
  </li>
  <li>
   <strong><em>Project</em></strong> ==> Django Website
