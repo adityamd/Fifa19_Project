@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fifa 19</title>
+        <link href="{% static 'style.css' %}" rel="stylesheet" type="text/css">
+    </head>
+    <body background="{% static 'bg(3).jpg' %}">
+        <center>
+        <div class="show_bid">
+            Starting Bid:<br>{{ bidding }}
+        </div>
+        </center>
+        <form  action='getBid' method='get'>
+            <div class="grid_container" style="float:left">
+                    <div class="grid_item">
+                        <label for="Overall_Rating">Overall Rating</label><br>
+                        <input type='text' placeholder="Out of 100" name="Overall" required>
+                    </div>
+                    <div class="grid_item">
+                        <label for="Value">Value</label><br>
+                        <input type='text' placeholder="In $" name="Value" required>
+                    </div>
+                    <div class="grid_item">
+                        <label for="Special">Special</label><br>
+                        <input type='text' placeholder="Special" name="Special" required>
+                    </div>
+                    <div class="grid_item">
+                        <label for="Short_Passing">Short Passing</label><br>
+                        <input type='text' placeholder="Out of 100" name="Short_Passing" required>
+                    </div>
+                    <div class="grid_item">
+                        <label for="Vision">Vision</label><br>
+                        <input type='text' placeholder="Out of 100" name="Vision" required>
+                    </div>
+                </div>
+                <div class="grid_container" style="float:right">
+                    <div class="grid_item">
+                        <label for="Potential">Potential</label><br>
+                        <input type='text' placeholder="Out of 100" name="Potential" required>
+                    </div>
+                    <div class="grid_item">
+                        <label for="Wage">Wage</label><br>
+                        <input type='text' placeholder="In $" name="Wage" required>
+                    </div>
+                    <div class="grid_item">
+                        <label for="International_Reputation">International Reputation</label><br>
+                        <input type='text' placeholder="Out of 5" name="International_Reputation" required>
+                    </div>
+                    <div class="grid_item">
+                        <label for="Reactions">Reactions</label><br>
+                        <input type='text' placeholder="Out of 100" name="Reactions" required>
+                    </div>
+                    <div class="grid_item">
+                        <label for="Composure">Composure</label><br>
+                        <input type='text' placeholder="Out of 100" name="Composure" required>
+                    </div>
+                </div>
+            <center>
+                <input style="height:50px;margin-top:505px;background-color:rgba(155, 247, 7, 0.8);border-radius:30;width:300px" type="submit" value="Get Starting Bid" name="submit">
+            </center>
+        </form>
+    </body>
+</html>

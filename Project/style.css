@@ -1,0 +1,19 @@
+.grid_container{
+    display:grid;
+    margin:50px 50px;
+    background-color:rgba(0,0,0,0.7);
+    color:gold;
+    grid-template-columns: auto;
+}
+
+body{
+    background-image: url('bg(3).jpg');
+}
+.grid_item{
+    padding: 15px;
+}
+input {
+    margin:10px;
+    padding:5px;
+    border-radius:5px;
+}
