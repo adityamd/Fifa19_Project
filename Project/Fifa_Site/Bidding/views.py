@@ -19,8 +19,7 @@ def getBidding(request):
     reputation=float(request.GET.get('International_Reputation'))
     reactions=float(request.GET.get('Reactions'))
     composure=float(request.GET.get('Composure'))
-    print(os.getcwd()+"\\Fifa19_Model")
-    model=tf.keras.models.load_model(str(os.getcwd()).replace('\\','/')+"/Fifa19_Model")
+    model=tf.keras.models.load_model("/var/www/html/Project/Fifa_Site/Fifa19_Model")
     feat=np.array([overall,potential,value,wage,special,reputation,passing,reactions,vision,composure])
     feat=feat.reshape(1,10)
     bidding_value=model.predict(feat)[0][0]
