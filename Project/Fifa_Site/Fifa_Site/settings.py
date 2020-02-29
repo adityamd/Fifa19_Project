@@ -25,7 +25,7 @@ SECRET_KEY = '#pdewl&dk&ru(dcdot_#28jl-n56!66*)94f1ca2^k&^$1n(wv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['13.127.245.2']
+ALLOWED_HOSTS = ['13.232.171.133','www.fifa19.gq']
 
 
 # Application definition
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'Fifa_Site.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': ['/var/www/html/Project/Fifa_Site/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -5,6 +5,7 @@ import numpy as np
 
 
 def home(request):
+    print(os.getcwd()+
     return render(request,'index.html',{'bidding':0})
 
 def getBidding(request):
@@ -19,7 +20,7 @@ def getBidding(request):
     reactions=float(request.GET.get('Reactions'))
     composure=float(request.GET.get('Composure'))
     print(os.getcwd()+"\\Fifa19_Model")
-    model=tf.keras.models.load_model("var/www/html/Project/Fifa_Site/Fifa19_Model.h5")
+    model=tf.keras.models.load_model(str(os.getcwd())+"/Fifa19_Model.h5")
     feat=np.array([overall,potential,value,wage,special,reputation,passing,reactions,vision,composure])
     feat=feat.reshape(1,10)
     bidding_value=model.predict(feat)[0][0]
