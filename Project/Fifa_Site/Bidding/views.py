@@ -35,7 +35,7 @@ def getBidding(request):
     reactions=float(request.GET.get('Reactions'))
     composure=float(request.GET.get('Composure'))
     print(os.getcwd()+"\\Fifa19_Model")
-    model=tf.keras.models.load_model(r"C:\Users\Aditya\OneDrive\Desktop\Grras\Practice\Fifa19_Rep\fifa19\Project\Fifa_Site\Fifa19_Model.h5")
+    model=tf.keras.models.load_model("/var/www/html/Project/Fifa_Site/Fifa19_Model.h5")
     non_scaled_feat=[overall,potential,value,wage,special,reputation,passing,reactions,vision,composure]
     scaled_feat=scaling(non_scaled_feat)
     feat=np.array(scaled_feat)
