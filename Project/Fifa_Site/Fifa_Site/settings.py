@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '#pdewl&dk&ru(dcdot_#28jl-n56!66*)94f1ca2^k&^$1n(wv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG =False
+DEBUG =True
 
-ALLOWED_HOSTS = ['13.232.171.133','fifa19.gq']
+ALLOWED_HOSTS = ['13.232.171.133','fifa19.gq','127.0.0.1']
 
 
 # Application definition
