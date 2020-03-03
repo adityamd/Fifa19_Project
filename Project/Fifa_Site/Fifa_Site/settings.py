@@ -55,7 +55,7 @@ ROOT_URLCONF = 'Fifa_Site.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': ['/var/www/html/Project/Fifa_Site/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
