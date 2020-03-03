@@ -4,8 +4,9 @@
     <head>
         <title>Fifa 19</title>
         <link href="{% static 'style.css' %}" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body background="{% static 'bg(3).jpg' %}">
+    <body background="{% static 'bg(3).jpg' %}" style="background-repeat:no-repeat">
         <center>
         <div class="show_bid">
             Starting Bid:<br>{{ bidding }}
@@ -57,7 +58,7 @@
                     </div>
                 </div>
             <center>
-                <input style="height:50px;margin-top:505px;background-color:rgba(155, 247, 7, 0.8);border-radius:30;width:300px" type="submit" value="Get Starting Bid" name="submit">
+                <input id="getBidButton" type="submit" value="Get Starting Bid" name="submit">
             </center>
         </form>
     </body>
